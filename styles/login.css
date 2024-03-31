@@ -1,5 +1,10 @@
 @import url('colors.css');
 
+body {
+    background-color: var(--dark);
+    margin: 0;
+}
+
 .container {
     margin: 0 auto;
     display: flex;
@@ -15,7 +20,6 @@
     color:white;
 }
 
-
 form {
     text-align: center;
 }
@@ -24,6 +28,7 @@ form {
     color:var(--dark);
     border:none;
     border-color: transparent;
+    outline: none;
     font-size:22px;
     background-color:transparent;
     color:white;
@@ -98,4 +103,59 @@ form {
     text-decoration:none;
     display: inline-block;
     color:var(--lightpurple);
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+header {
+    margin: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+}
+
+.direitos {
+    color: rgba(255,255,255,1);
+    position: relative;
+    left: -5%;
+    font-family: Mulish;
+    font-weight: Regular;
+    text-align: left;
+}
+.politica {
+    color: rgba(255,255,255,1);
+    position: relative;
+    left: 10%;
+    font-family: Mulish;
+    font-weight: Regular;
+    text-align: left;
+}
+.DWEB {
+    color: rgba(255,255,255,1);
+    position: relative;
+    left: -35%;
+    font-family: Mulish;
+    font-weight: Regular;
+    text-align: left;
+}
+
+a:link { 
+    text-decoration: none; 
+} 
+a:visited { 
+    text-decoration: none; 
+} 
+a:hover { 
+    text-decoration: none; 
+} 
+a:active { 
+    text-decoration: none; 
 }
