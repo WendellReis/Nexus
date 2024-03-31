@@ -1,0 +1,101 @@
+@import url('colors.css');
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.titulo_login {
+    font-family:sans-serif;
+    text-align: center;
+    font-size: 220%;
+    color:white;
+}
+
+
+form {
+    text-align: center;
+}
+
+.campo {
+    color:var(--dark);
+    border:none;
+    border-color: transparent;
+    font-size:22px;
+    background-color:transparent;
+    color:white;
+    margin-left: 8%;
+    margin-right:8%;
+    width:84%;
+}
+
+.txtbtn {
+    margin:0;
+    color:var(--dark);
+}
+
+.botao_login {
+    margin-top:3%;
+    color:var(--dark);
+    border-radius:1px;
+    font-size:18px;
+    font-weight:bold;
+    padding: 10px 20px;
+    background-color: var(--lightpurple);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.quadro {
+    padding-top: 3%;
+    padding-bottom: 6%;
+    text-align: justify;
+    width: 600px;
+    height:auto;
+    margin: 0 auto;
+    background-color: black;
+    border-radius:8px;
+}
+
+.linha1 {
+    width: 84%;
+    margin-bottom: 5%;
+}
+
+.linha2 {
+    width: 84%;
+    margin-bottom: 1%;
+}
+
+.esqueci {
+    margin-top: 0;
+    font-family: sans-serif;
+    font-size:12px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    margin-left:8%;
+}
+
+.criarConta {
+    color:white;
+    font-weight: bold;
+    text-align: center;
+    width:100%;
+    font-family: sans-serif;
+    font-size:12px;
+}
+
+.criar {
+    display: inline-block;
+}
+
+.criarLink {
+    text-decoration:none;
+    display: inline-block;
+    color:var(--lightpurple);
+}
