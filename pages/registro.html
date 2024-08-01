@@ -10,25 +10,30 @@
         <img src="../assets/logo2.png" style="max-height: 30px; padding: 2%;">
     </header>
     <div clas="container">
-        <h2 class="titulo_login">Login</h2>
+        <h2 class="titulo_registro">Tela de Registro</h2>
         <form>
             <div class="quadro">
+                <input class="campo" type="text" placeholder="Nome" name="nome"/>
+                <hr class ="linha1">
                 <input class="campo" type="text" placeholder="Endereço de e-mail" name="email"/>
                 <hr class ="linha1">
+                <input class="campo" type="text" placeholder="Confirme o e-mail" name="confemail"/>
+                <hr class ="linha1">
                 <input class="campo" type="password" placeholder="Senha" name="senha"/>
+                <hr class ="linha1">
+                <input class="campo" type="password" placeholder="Confirme a senha" name="confsenha"/>
                 <hr class ="linha2">
-                <a class="esqueci" href="/index.html">Esqueci minha senha</a>
             </div>
-            <button type="submit" class="botao_login"><p class="txtbtn">LOGIN</p></button>
+            <button type="submit" class="botao_login"><p class="txtbtn">REGISTRAR-SE</p></button>
         </form>
         <div class="criarConta">
-            <p class="criar">Não possui uma conta?</p>
-            <a class="criarLink" href="/index.html">Crie uma.</a>
+            <p class="criar">Já possui uma conta?</p>
+            <a class="criarLink" href="/index.html">LOGIN</a>
         </div>
     </div>
 
-    <footer>
-        <div class="rodape-tu" style="padding: 2%;">
+    <footer id="rod">
+        <div class="rodape-tu">
             <a class="direitos" href="">Termos de Uso</a>
             <a class="politica" href="">Política de Privacidade</a><br>
         </div>
