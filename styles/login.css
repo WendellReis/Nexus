@@ -81,7 +81,6 @@ form {
 .linha3 {
     height: 1px;
     background-color: white;
-    margin: 2%
 }
 
 .esqueci {
@@ -101,6 +100,7 @@ form {
     width:100%;
     font-family: sans-serif;
     font-size:12px;
+    padding-bottom: 10%;
 }
 
 .criar {
@@ -130,32 +130,6 @@ header {
     text-align: center;
 }
 
-.direitos {
-    color: rgba(255,255,255,1);
-    position: relative;
-    left: -5%;
-    font-family: Mulish;
-    font-weight: Regular;
-    text-align: left;
-    font-size: 1em;
-}
-.politica {
-    color: rgba(255,255,255,1);
-    position: relative;
-    font-family: Mulish;
-    font-weight: Regular;
-    text-align: left;
-    font-size: 1em;
-}
-.DWEB {
-    color: rgba(255,255,255,1);
-    position: relative;
-    font-family: Mulish;
-    font-weight: Regular;
-    text-align: left;
-    font-size: 1em;
-}
-
 a:link { 
     text-decoration: none; 
 } 
@@ -169,11 +143,18 @@ a:active {
     text-decoration: none; 
 }
 
-.rodape-tu {
-    display: flex;
-    justify-content: space-between;
+.direitos {
     width: 100%;
+    text-align: center;
+    color:white;
+    margin-right: 50%;
 }
+.politica {
+    color:white;
+    width: 100%;
+    text-align: center;
+}
+
 
 @media(max-width: 600px){
     .quadro {
@@ -181,6 +162,22 @@ a:active {
         margin: auto;
         transition: width .5s ease;
     }
+}
 
+@media(max-width: 500px){
+    .direitos {
+        margin-right: 25%;
+    }
+}
 
+@media(max-width: 400px){
+    .direitos {
+        margin: 30%;
+    }
+}
+
+@media(max-width: 300px){
+    .direitos {
+        margin: 20%;
+    }
 }
