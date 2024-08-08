@@ -104,6 +104,7 @@ form {
     width:100%;
     font-family: sans-serif;
     font-size:12px;
+    padding-bottom: 10%;
 }
 
 .criar {
@@ -131,6 +132,11 @@ header {
     width: 100%;
     background-color: black;
     text-align: center;
+}
+
+.logo {
+    max-height: 30px;
+    padding: 2%;
 }
 
 .DWEB {
@@ -191,4 +197,43 @@ footer {
     position: absolute;
     bottom:0%;
     width: 100%;
+}
+
+.direitos {
+    width: 100%;
+    text-align: center;
+    color:white;
+    margin-right: 50%;
+}
+.politica {
+    color:white;
+    width: 100%;
+    text-align: center;
+}
+
+
+@media(max-width: 600px){
+    .quadro {
+        width: 90%;
+        margin: auto;
+        transition: width .5s ease;
+    }
+}
+
+@media(max-width: 500px){
+    .direitos {
+        margin-right: 25%;
+    }
+}
+
+@media(max-width: 400px){
+    .direitos {
+        margin: 30%;
+    }
+}
+
+@media(max-width: 300px){
+    .direitos {
+        margin: 20%;
+    }
 }

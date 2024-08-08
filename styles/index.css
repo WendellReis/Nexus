@@ -1,0 +1,157 @@
+@import url('colors.css');
+
+body {
+    font-family:sans-serif;
+    background-color:var(--dark);
+    padding:0;
+    color:white;
+    text-align: center;
+}
+footer {
+    padding-top:1%;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color:var(--dark);
+}
+
+.cabecalho {
+    margin-bottom:2%;
+    padding-top:3%;
+    padding-bottom:0;
+    width: 100%;
+    vertical-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.divb {
+    width:50%;
+    text-align: right;
+    margin-left:25%;
+}
+
+.botao {
+    font-size:small;
+    background: none;
+    color: white;
+    border: 2;
+    border-style: solid;
+    border-color: white;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    margin-left:5%;
+    margin-right:5%;
+}
+
+.logo {
+    max-height: 35px;
+    margin-left:0;
+    text-align: left;
+}
+
+#rod {
+    width: 100%;
+    align-items: center;
+    margin-bottom:0;
+    height:10%;
+}
+
+.rodape-tu {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.direitos {
+    width: 100%;
+    text-align: right;
+    color:white;
+    margin-right: 50%;
+}
+.politica {
+    color:white;
+    width: 100%;
+    text-align: left;
+}
+
+.DWEB {
+    color: rgba(255,255,255,1);
+    position: relative;
+    font-weight: Regular;
+    text-align: left;
+    font-size: 1em;
+}
+
+.linha {
+    height: 1px;
+    background-color: white;
+    margin-top:1%;
+    margin-bottom:1%;
+}
+
+a:link { 
+    text-decoration: none; 
+} 
+a:visited { 
+    text-decoration: none; 
+} 
+a:hover { 
+    text-decoration: none; 
+} 
+a:active { 
+    text-decoration: none; 
+}
+
+.apresentacao {
+    justify-content: center;
+    padding-top:10%;
+    padding-bottom:10%;
+    text-align: left;
+    height:20%;
+    padding-left:5%;
+    margin:0;
+    background-image: url("/assets/promo/fundo1.png");
+    background-size:100%;
+    max-height:80%;
+    background-repeat: no-repeat;
+}
+
+.titulovan {
+    font-size:180%;
+    font-weight: bold;
+    margin-bottom:1%;
+}
+
+.textovan {
+    margin-top:1%;
+}
+
+.textoapre {
+    font-size:120%;
+    color:white;
+}
+
+.promo {
+    justify-content: center;
+    padding-top:10%;
+    padding-bottom:10%;
+    text-align: right;
+    height:80%;
+    padding-right:5%;
+    margin:0;
+    background-image: url("/assets/promo/fundo2.png");
+    background-size: 100%;
+    max-height:80%;
+    background-repeat: no-repeat;
+}
+
+.esp {
+    margin:2%;
+}
