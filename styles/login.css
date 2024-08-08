@@ -143,6 +143,18 @@ a:active {
     text-decoration: none; 
 }
 
+#rod {
+    width: 100%;
+    align-items: center;
+    margin-bottom:0;
+    height:10%;
+}
+
+.rodape-tu {
+    width: 100%;
+    margin-bottom: 0;
+}
+
 .direitos {
     width: 100%;
     text-align: center;

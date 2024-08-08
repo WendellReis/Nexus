@@ -1,0 +1,76 @@
+@import url('colors.css');
+
+body {
+    background-color: var(--dark);
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
+    color:white;
+    font-family:sans-serif;
+}
+
+.logo {
+    max-height: 30px;
+    padding: 2%;
+}
+
+footer {
+    position: absolute;
+    bottom:0%;
+    width: 100%;
+}
+
+#rod {
+    width: 100%;
+    align-items: center;
+    margin-bottom:0;
+    height:10%;
+}
+
+.rodape-tu {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.direitos {
+    width: 100%;
+    text-align: center;
+    color:white;
+    margin-right: 50%;
+}
+.politica {
+    color:white;
+    width: 100%;
+    text-align: center;
+}
+
+.linha3 {
+    height: 1px;
+    background-color: white;
+}
+
+@media(max-width: 600px){
+    .quadro {
+        width: 90%;
+        margin: auto;
+        transition: width .5s ease;
+    }
+}
+
+@media(max-width: 500px){
+    .direitos {
+        margin-right: 25%;
+    }
+}
+
+@media(max-width: 400px){
+    .direitos {
+        margin: 30%;
+    }
+}
+
+@media(max-width: 300px){
+    .direitos {
+        margin: 20%;
+    }
+}
