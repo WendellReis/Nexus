@@ -117,7 +117,7 @@ a:active {
     height:20%;
     padding-left:5%;
     margin:0;
-    background-image: url("/assets/promo/fundo1.png");
+    background-image: url("../assets/promo/fundo1.png");
     background-size:100%;
     max-height:80%;
     background-repeat: no-repeat;
