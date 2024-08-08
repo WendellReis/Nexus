@@ -1,1 +1,54 @@
 @import url("colors.css");
+
+body {
+    margin: 0;
+    font-family:sans-serif;
+    background-color: var(--dark);
+    color:white;
+}
+
+.divlogo {
+    text-align: center;
+}
+
+.logo {
+    max-width: 150px;
+    width:100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    max-width: 220px;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    border: 2px solid #6100C2;
+    box-shadow:
+        0 0 10px #6100C2,
+        0 0 20px #6100C2,
+        0 0 30px #6100C2,
+        0 0 40px #6100C2;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: var(--lightpurple);
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: var(--purple);
+    color: white;
+}
+
+.corpo {
+    margin-left:17%;
+}
