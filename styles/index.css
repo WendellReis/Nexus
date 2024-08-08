@@ -27,6 +27,7 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    max-height:25px;
 }
 
 .divb {
