@@ -39,10 +39,10 @@ footer {
 .botao {
     font-size:small;
     background: none;
-    color: white;
+    color: lightgray;
     border: 2;
     border-style: solid;
-    border-color: white;
+    border-color: lightgray;
     padding-left: 2%;
     padding-right: 2%;
     padding-top: 1%;
@@ -50,6 +50,11 @@ footer {
     text-align: center;
     margin-left:5%;
     margin-right:5%;
+}
+
+.botao:hover {
+    border-color: white;
+    color: white;
 }
 
 .logo {
