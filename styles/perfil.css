@@ -35,7 +35,6 @@ body, html {
     box-sizing: border-box;
 }
 
-/* Ajustes para garantir responsividade em diferentes tamanhos de tela */
 @media screen and (max-width: 1200px) {
     .sidebar {
         width: 20%;
