@@ -28,10 +28,9 @@ body, html {
 
 .content {
     margin-left: 15%;
-    padding-left:3%;
+    padding: 20px;
     width: calc(100% - 15%);
     overflow-y: auto;
-    height: 100vh;
     box-sizing: border-box;
 }
 
@@ -74,7 +73,7 @@ body, html {
 }
 
 ul {
-    font-size:large;
+    font-size: large;
     width: 100%;
     margin: 0;
     list-style-type: none;
@@ -123,9 +122,8 @@ li a:hover:not(.active) {
 }
 
 .cabecalhogeral {
-    margin-top: 1000px;
+    margin-top: 10px;
     text-align: right;
-    max-height: 1%;
 }
 
 .cabecalhogeral_image {
@@ -142,14 +140,18 @@ li a:hover:not(.active) {
     font-size: small;
 }
 
+
+.titulo {
+    padding-left:30px;
+}
+
 .jogos {
-    margin-top: 100%;
+    margin-top: 20px;
     width: 100%;
-    vertical-align: center;
-    align-items: center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .jogo {
@@ -170,23 +172,24 @@ li a:hover:not(.active) {
 .descricao {
     background-color: white;
     opacity: 80%;
-    margin-top: -21%;
+    margin-top: -20%;
     border-radius: 10%;
     color: #000;
     font-size: smaller;
-    padding: 3%;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .nome {
     font-weight: bold;
     text-align: left;
-    margin:0;
+    margin: 0;
 }
 
 .genero {
     font-weight: bold;
-    margin:0;
-    padding:0;
-    text-align:left;
+    margin: 0;
+    padding: 0;
+    text-align: left;
     font-size: 60%;
 }
