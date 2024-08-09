@@ -1,24 +1,84 @@
 @import url("colors.css");
 
-body {
+body, html {
     margin: 0;
-    font-family:sans-serif;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    color: white;
     background-color: var(--dark);
-    color:white;
+    font-family: sans-serif;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.divlogo {
-    text-align: center;
+.sidebar {
+    background-color: var(--dark);
+    color: #fff;
+    width: 15%;
+    max-width: 250px;
+    min-width: 150px;
+    padding: 0;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
 }
 
-.logo {
-    max-width: 150px;
-    width:100%;
+.content {
+    margin-left: 15%;
+    padding-left:3%;
+    width: calc(100% - 15%);
+    overflow-y: auto;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Ajustes para garantir responsividade em diferentes tamanhos de tela */
+@media screen and (max-width: 1200px) {
+    .sidebar {
+        width: 20%;
+        max-width: 200px;
+    }
+
+    .content {
+        margin-left: 20%;
+        width: calc(100% - 20%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 25%;
+        max-width: 180px;
+    }
+
+    .content {
+        margin-left: 25%;
+        width: calc(100% - 25%);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        max-width: none;
+    }
+
+    .content {
+        margin-left: 0;
+        width: 100%;
+    }
 }
 
 ul {
-    list-style-type: none;
+    font-size:large;
+    width: 100%;
     margin: 0;
+    list-style-type: none;
     padding: 0;
     max-width: 220px;
     position: fixed;
@@ -30,6 +90,9 @@ ul {
         0 0 20px #6100C2,
         0 0 30px #6100C2,
         0 0 40px #6100C2;
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 0;
 }
 
 li a {
@@ -49,6 +112,13 @@ li a:hover:not(.active) {
     color: white;
 }
 
-.corpo {
-    margin-left:17%;
+.divlogo {
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.logo {
+    max-width: 150px;
+    width: 100%;
 }
