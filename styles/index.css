@@ -145,6 +145,18 @@ a:active {
     color:white;
 }
 
+.titulovan2 {
+    font-size:250%;
+    font-weight: bold;
+    margin-bottom:1%;
+    margin-top:8%;
+}
+
+.textovan2 {
+    margin-top:1%;
+    margin-bottom:8%;
+}
+
 .promo {
     justify-content: center;
     padding-top:10%;
