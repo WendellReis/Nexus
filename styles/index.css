@@ -18,7 +18,7 @@ footer {
 
 .cabecalho {
     margin-bottom:2%;
-    padding-top:3%;
+    padding-top:2%;
     padding-bottom:0;
     width: 100%;
     vertical-align: center;
@@ -43,13 +43,14 @@ footer {
     border: 2;
     border-style: solid;
     border-color: lightgray;
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding:1%;
     text-align: center;
     margin-left:5%;
     margin-right:5%;
+    width:30%;
+    height:auto;
+    max-height:35px;
+    max-width:100px;
 }
 
 .botao:hover {
