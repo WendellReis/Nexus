@@ -27,6 +27,8 @@ body, html {
 }
 
 .content {
+    margin-top:1%;
+    text-align: center;
     margin-left: 15%;
     padding-left:3%;
     width: calc(100% - 15%);
@@ -120,4 +122,42 @@ li a:hover:not(.active) {
 .logo {
     max-width: 150px;
     width: 100%;
+}
+
+.user {
+    width:100%;
+    max-width: 350px;
+}
+
+.nome {
+    font-weight:bold;
+    font-size:x-large;
+}
+
+.quadro {
+    background-color: black;
+    border-radius:5%;
+    padding:5%;
+    text-align: left;
+    width: 80%;
+}
+
+.dado {
+    font-size:large;
+    margin-top:2%;
+    margin-bottom:2%;
+}
+
+.btn {
+    margin-top:3%;
+    color:var(--dark);
+    border-radius:1px;
+    font-size:18px;
+    font-weight:bold;
+    padding: 10px 20px;
+    background-color: var(--purple);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius:5px;
 }
