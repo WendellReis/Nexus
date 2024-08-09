@@ -219,14 +219,17 @@ footer {
     font-size:18px;
     font-weight:bold;
     padding: 1%;
-    background-color: var(--lightpurple);
-    color: white;
+    background-color: var(--purple);
     border: none;
     cursor: pointer;
     margin:2%;
     width:20%;
     max-width: 150px;
     color:var(--dark);
+}
+
+.botao_registro:hover {
+    background-color: var(--lightpurple);
 }
 
 @media(max-width: 600px){
