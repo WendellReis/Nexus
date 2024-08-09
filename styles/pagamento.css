@@ -1,0 +1,94 @@
+@import url("colors.css");
+
+body {
+    height:100%;
+    background-color: var(--dark);
+}
+
+header {
+    margin: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    height:60px;
+    margin-bottom:5%;
+}
+
+.logo {
+    margin-top:1%;
+    height:35px;
+    width:auto;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.tela {
+    background-color: var(--dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: var(--gray);
+}
+
+.payment-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--dark);
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--gray);
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+    font-size: 16px;
+    color: var(--dark);
+}
+
+.input-group input:focus {
+    border-color: var(--purple);
+    outline: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--purple);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--lightpurple);
+}
