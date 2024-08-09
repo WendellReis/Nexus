@@ -92,3 +92,72 @@ h1 {
 .btn:hover {
     background-color: var(--lightpurple);
 }
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#rod {
+    width: 100%;
+    align-items: center;
+    margin-bottom:0;
+    height:10%;
+}
+
+.rodape-tu {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.direitos {
+    width: 100%;
+    text-align: center;
+    color:white;
+    margin-right: 50%;
+}
+.politica {
+    color:white;
+    width: 100%;
+    text-align: center;
+}
+
+@media(max-width: 500px){
+    .direitos {
+        margin-right: 25%;
+    }
+}
+
+@media(max-width: 400px){
+    .direitos {
+        margin: 30%;
+    }
+}
+
+@media(max-width: 300px){
+    .direitos {
+        margin: 20%;
+    }
+}
+
+a:link { 
+    text-decoration: none; 
+} 
+a:visited { 
+    text-decoration: none; 
+} 
+a:hover { 
+    text-decoration: none; 
+} 
+a:active { 
+    text-decoration: none; 
+}
+
+.linha3 {
+    height: 1px;
+    background-color: white;
+    margin:1%;
+}
