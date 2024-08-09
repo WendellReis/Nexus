@@ -127,8 +127,12 @@ li a:hover:not(.active) {
 }
 
 .cabecalhogeral_image {
-    margin-bottom: 0;
-    max-height: 15px;
+    min-width: 15px;
+    min-height: 15px;
+    width:2%;
+    height:2%;
+    max-width:25px;
+    max-height: 25px;
     padding-left: 1%;
 }
 
@@ -137,7 +141,7 @@ li a:hover:not(.active) {
     color: white;
     border: none;
     background: none;
-    font-size: small;
+    font-size: 18px;
 }
 
 
@@ -193,3 +197,4 @@ li a:hover:not(.active) {
     text-align: left;
     font-size: 60%;
 }
+
