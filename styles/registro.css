@@ -211,6 +211,23 @@ footer {
     text-align: center;
 }
 
+.botao_registro {
+    text-align:center;
+    margin-top:3%;
+    color:var(--dark);
+    border-radius:2px;
+    font-size:18px;
+    font-weight:bold;
+    padding: 1%;
+    background-color: var(--lightpurple);
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin:2%;
+    width:20%;
+    max-width: 150px;
+    color:var(--dark);
+}
 
 @media(max-width: 600px){
     .quadro {
