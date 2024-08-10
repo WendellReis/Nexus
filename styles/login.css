@@ -172,12 +172,11 @@ a:active {
     text-align: center;
 }
 
-
-@media(max-width: 600px){
+@media (max-width: 800px){
     .quadro {
-        width: 90%;
+        width: 80% !important;
         margin: auto;
-        transition: width .5s ease;
+        transition: .5s width ease;
     }
 }
 

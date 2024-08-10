@@ -161,19 +161,11 @@ a:active {
     text-decoration: none; 
 }
 
-@media(max-width: 600px){
-    .quadro {
-        width: 90%;
-        margin: auto;
-        transition: width .5s ease;
-    }
-}
-
 #rod {
     width: 100%;
     align-items: center;
-    margin-bottom:0;
-    height:10%;
+    margin-bottom: 0;
+    height: 10%;
 }
 
 .rodape-tu {
@@ -232,12 +224,11 @@ footer {
     background-color: var(--lightpurple);
 }
 
-@media(max-width: 600px){
+@media (max-width: 800px){
     .quadro {
-        width: 90%;
+        width: 80% !important;
         margin: auto;
-        transition: width .5s ease;
-    }
+    } 
 }
 
 @media(max-width: 500px){

@@ -212,3 +212,22 @@ a:active {
     text-align:left;
     color:var(--lightpurple)
 }
+
+@media (max-width: 800px){
+    .jogos {
+        flex-direction: column;
+    }
+
+    .jogo {
+        width: 90%;
+    }
+    .divb {
+        margin: auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .apresentacao {
+        font-size: .8em;
+    }    
+}
