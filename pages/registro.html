@@ -58,15 +58,55 @@
             alert("Nome precisa ter pelo menos 3 letras.");
             return;
         }
-        if(senha.length < 8 || senha.length > 16){
+        if (!/^[a-zA-Z0-9._@]+$/.test(email)) {
+            alert("E-mail contém caracteres inválidos.");
+            return;
+        }
+        if (!email.includes("@")) {
+            alert("E-mail precisa conter '@'.");
+            return;
+        }
+        if (!email.includes(".")) {
+            alert("E-mail precisa conter um '.' (ponto).");
+            return;
+        }
+        if (email.startsWith("@") || email.endsWith("@")) {
+            alert("E-mail não pode começar ou terminar com '@'.");
+            return;
+        }
+        if (email.startsWith(".") || email.endsWith(".")) {
+            alert("E-mail não pode começar ou terminar com um '.' (ponto).");
+            return;
+        }
+        if (email.length < 5) {
+            alert("E-mail muito curto.");
+            return;
+        }
+        if (senha.length < 8 || senha.length > 16) {
             alert("Senha precisa ter entre 8 e 16 caracteres.");
+            return;
+        }
+        if (!/[A-Z]/.test(senha)) {
+            alert("Senha precisa ter pelo menos uma letra maiúscula.");
+            return;
+        }
+        if (!/[a-z]/.test(senha)) {
+            alert("Senha precisa ter pelo menos uma letra minúscula.");
+            return;
+        }
+        if (!/[0-9]/.test(senha)) {
+            alert("Senha precisa ter pelo menos um número.");
+            return;
+        }
+        if (!/[\W_]/.test(senha)) {
+            alert("Senha precisa ter pelo menos um caractere especial.");
             return;
         }
         if(email!=confemail || senha!=confsenha){
             alert("E-mail ou senha não coincidem.");
             return;
         }
-            
+
         fetch("Users.txt")
             .then((res) => res.text())
             .then((text) => {
@@ -78,10 +118,9 @@
                         return;
                     }
                 }
+                alert("Conta criada com sucesso!");
+                window.location.href = "login.html";
             })
             .catch((e) => console.error(e));
-        alert("Conta criada com sucesso!");
-        window.location.href = "login.html";
-        return;
     }
 </script>
