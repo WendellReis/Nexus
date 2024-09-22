@@ -13,18 +13,18 @@
         <h2 class="titulo_registro">Tela de Registro</h2>
         <form>
             <div class="quadro">
-                <input class="campo" type="text" placeholder="Nome" name="nome"/>
+                <input class="campo" type="text" placeholder="Nome" name="nome" id="nome"/>
                 <hr class ="linha1">
-                <input class="campo" type="text" placeholder="Endereço de e-mail" name="email"/>
+                <input class="campo" type="text" placeholder="Endereço de e-mail" name="email" id="email"/>
                 <hr class ="linha1">
-                <input class="campo" type="text" placeholder="Confirme o e-mail" name="confemail"/>
+                <input class="campo" type="text" placeholder="Confirme o e-mail" name="confemail" id="confemail"/>
                 <hr class ="linha1">
-                <input class="campo" type="password" placeholder="Senha" name="senha"/>
+                <input class="campo" type="password" placeholder="Senha" name="senha" id="senha"/>
                 <hr class ="linha1">
-                <input class="campo" type="password" placeholder="Confirme a senha" name="confsenha"/>
+                <input class="campo" type="password" placeholder="Confirme a senha" name="confsenha" id="confsenha"/>
                 <hr class ="linha2">
             </div>
-            <a href="home.html"><input class="botao_registro" type="button" value="REGISTRAR-SE"></a>
+            <a onclick="Verify()"><input class="botao_registro" type="button" value="REGISTRAR-SE"></a>
         </form>
         <div class="criarConta">
             <p class="criar">Já possui uma conta?</p>
@@ -42,3 +42,36 @@
     </footer>
 </body>
 </html>
+
+<script>
+    function Verify(){
+        var nome = document.getElementById("nome").value
+        var email = document.getElementById("email").value;
+        var confemail = document.getElementById("confemail").value;
+        var senha = document.getElementById("senha").value;
+        var confsenha = document.getElementById("confsenha").value
+        if(nome=="" || email=="" || confemail=="" || senha=="" || confsenha==""){
+            alert("Nenhum campo pode estar vazio.");
+            return;
+        }
+        if(email!=confemail || senha!=confsenha){
+            alert("E-mail ou senha não coincidem.");
+            return;
+        }
+            
+        fetch("Users.txt")
+            .then((res) => res.text())
+            .then((text) => {
+                var lines = text.split('\n');
+                for (var line = 0; line < lines.length; line++) {
+                    const matches = lines[line].split('"');
+                    if(matches[1]==email){
+                        alert("Este e-mail já existe.");
+                        return;
+                    }
+                }
+            })
+            .catch((e) => console.error(e));
+        
+    }
+</script>

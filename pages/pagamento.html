@@ -1,51 +1,39 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="../assets/icone.ico">
-    <title>Nexus</title>
-    <link rel="stylesheet" href="../styles/pagamento.css">
+    <link href="https://fonts.googleapis.com/css?family=Mulish&display=swap" rel="stylesheet" />
+    <link href="../styles/pagamento.css" rel="stylesheet" />
+    <title>Pagamento</title>
 </head>
 <body>
     <header>
         <img src="../assets/logo2.png" class="logo">
     </header>
-    <div class="tela">
-    <div class="payment-container">
-        <h1>Tela de Pagamento</h1>
-        <form>
-            <div class="input-group">
-                <label for="name">Nome no Cartão</label>
-                <input type="text" id="name" name="name" required>
+    <div clas="container">
+        <h2 class="titulo_pagamento">Tela de Pagamento</h2>
+        <form class="pagform">
+            <div class="quadro">
+                <input class="campo" type="text" placeholder="Nome no Cartão" name="card-name" id="name" required/>
+                <hr class ="linha1">
+                <input class="campo" type="text" placeholder="Número do Cartão" name="card-number" id="card-number" required/>
+                <hr class ="linha1">
+                <input class="campo" type="month" placeholder="Data de Validade" name="expiry" id="expiry" required/>
+                <hr class ="linha1">
+                <input class="campo" type="text" placeholder="CVV" name="cvv" id="cvv" required/>
+                <hr class ="linha1">
+                <input class="campo" type="text" value="Valor Total da Compra: R$150,00" name="amount" id="amount" disabled/>
             </div>
-            <div class="input-group">
-                <label for="card-number">Número do Cartão</label>
-                <input type="text" id="card-number" name="card-number" required>
-            </div>
-            <div class="input-group">
-                <label for="expiry">Data de Validade</label>
-                <input type="month" id="expiry" name="expiry" required>
-            </div>
-            <div class="input-group">
-                <label for="cvv">CVV</label>
-                <input type="text" id="cvv" name="cvv" required>
-            </div>
-            <div class="input-group">
-                <label for="amount">Valor</label>
-                <input type="number" id="amount" name="amount" required>
-            </div>
-            <a href="biblioteca.html"><input type="button" class="btn" value="Pagar"></a>
+            <a href="biblioteca.html"><input class="botao_pagamento" type="button" value="Pagar"></a>
         </form>
     </div>
-</div>
-<footer id="rod">
-    <div class="rodape-tu">
-        <a class="direitos" href="">Termos de Uso</a>
-        <a class="politica" href="">Política de Privacidade</a><br>
-    </div>
-    <div class="linha3"></div>
-    <a style="color:white">DWEB Productions | NEXUS INC</a>
-</footer>
+
+    <footer id="rod">
+        <div class="rodape-tu">
+            <a class="direitos" href="">Termos de Uso</a>
+            <a class="politica" href="">Política de Privacidade</a><br>
+        </div>
+        <div class="linha3"></div>
+        <a class="DWEB">DWEB Productions | NEXUS INC</a>
+    </footer>
 </body>
 </html>
