@@ -215,8 +215,7 @@ footer {
     border: none;
     cursor: pointer;
     margin:2%;
-    width:20%;
-    max-width: 150px;
+    width:auto;
     color:var(--dark);
 }
 
