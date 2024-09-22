@@ -15,12 +15,35 @@
             <button class="close-btn" onclick="closeSearchBar()">X</button>
         </div>
         <div class="space">
-            <input class="cabecalhogeral_image" type="image" src="../assets/promo/magniglass.png" onclick="openSearchBar()">
-            <input class="cabecalhogeral_image" type="image" src="../assets/promo/bell.png">
+            <button onclick="openSearchBar()"><img class="cabecalhogeral_image" type="image" src="../assets/promo/magniglass.png"></button>
+            <button data-bs-toggle="modal" data-bs-target="#exampleModal"><img class="cabecalhogeral_image" type="image" src="../assets/promo/bell.png"></button>
             <input class="cabecalhogeral_image" type="image" src="../assets/promo/cart.png">
             <input class="cabecalhogeral_image" type="image" src="../assets/promo/user.png">
             <a href="perfil.html"><input class="usuario_botao" type="button" value="Usuário"></a>
         </div>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Notificações</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">Compra de Grand Theft Auto V realizada com sucesso (22/09/2024)</li>
+                            <li class="list-group-item">O jogo Alien Isolation está com 50% de desconto</li>
+                            <li class="list-group-item">Compra de Dark Souls II Remastered realizada com sucesso (21/09/2024)</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
     </div>
     <div class="container-fluid conteudo">
         <div class="container-fluid carroseldiv">
