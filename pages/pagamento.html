@@ -13,17 +13,17 @@
         <h2 class="titulo_pagamento">Tela de Pagamento</h2>
         <form class="pagform">
             <div class="quadro">
-                <input class="campo" type="text" placeholder="Nome no Cartão" name="card-name" id="name" required/>
+                <input class="campo" type="text" placeholder="Nome no Cartão" name="card-name" id="card-name" required/>
                 <hr class ="linha1">
-                <input class="campo" type="text" placeholder="Número do Cartão" name="card-number" id="card-number" required/>
+                <input class="campo" type="number" placeholder="Número do Cartão" name="card-number" id="card-number" required/>
                 <hr class ="linha1">
                 <input class="campo" type="month" placeholder="Data de Validade" name="expiry" id="expiry" required/>
                 <hr class ="linha1">
-                <input class="campo" type="text" placeholder="CVV" name="cvv" id="cvv" required/>
+                <input class="campo" type="number" placeholder="CVV" name="cvv" id="cvv" required/>
                 <hr class ="linha1">
                 <input class="campo" type="text" value="Valor Total da Compra: R$150,00" name="amount" id="amount" disabled/>
             </div>
-            <a href="biblioteca.html"><input class="botao_pagamento" type="button" value="Pagar"></a>
+            <a onclick="Verify()"><input class="botao_pagamento" type="button" value="Pagar"></a>
         </form>
     </div>
 
@@ -37,3 +37,37 @@
     </footer>
 </body>
 </html>
+
+<script>
+    function Verify(){
+        var card_name = document.getElementById("card-name").value;
+        var card_number = document.getElementById("card-number").value;
+        var [expiryyear,expirymonth] = document.getElementById("expiry").value.split('-');
+        var cvv = document.getElementById("cvv").value;
+        const d = new Date();
+
+        if(card_name=="" || card_number=="" || expiry=="" || cvv==""){
+            alert("Nenhum campo pode estar vazio.");
+            return;
+        }
+        if(card_name.length < 3){
+            alert("Nome precisa ter pelo menos 3 letras.");
+            return;
+        }
+        if(card_number.length != 16){
+            alert("Número do cartão precisa ter 16 dígitos.");
+            return;
+        }
+        if(expiryyear < d.getFullYear() || expirymonth < d.getMonth()){
+            alert("Data informada expirada.");
+            return;
+        }
+        if(cvv.length != 2){
+            alert("CVV precisa ter dois dígitos.");
+            return;
+        }
+        alert("Sua transação foi concluida com sucesso!");
+        window.location.href = "biblioteca.html";
+        return;
+    }
+</script>
