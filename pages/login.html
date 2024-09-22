@@ -14,13 +14,13 @@
         <h2 class="titulo_registro">Login</h2>
         <form>
             <div class="quadro">
-                <input class="campo" type="text" placeholder="Endereço de e-mail" name="email"/>
+                <input class="campo" type="text" placeholder="Endereço de e-mail" name="email" id="email"/>
                 <hr class ="linha1">
-                <input class="campo" type="password" placeholder="Senha" name="senha"/>
+                <input class="campo" type="password" placeholder="Senha" name="senha" id="senha"/>
                 <hr class ="linha2">
                 <a class="esqueci" href="/index.html">Esqueci minha senha</a>
             </div>
-            <a href="home.html"><input class="botao_login" type="button" value="LOGIN"></a>
+            <a onclick="Verify()"><input class="botao_login" type="button" value="LOGIN"></a>
         </form>
         <div class="criarConta">
             <p class="criar">Não possui uma conta?</p>
@@ -38,3 +38,33 @@
     </footer>
 </body>
 </html>
+
+<script>
+    function Verify(){
+        var email = document.getElementById("email").value;
+        var senha = document.getElementById("senha").value;
+        if(email=="" || senha==""){
+            alert("Nenhum campo pode estar vazio.");
+            return;
+        }
+            
+        fetch("Users.txt")
+            .then((res) => res.text())
+            .then((text) => {
+                var lines = text.split('\n');
+                for (var line = 0; line < lines.length; line++) {
+                    const matches = lines[line].split('"');
+                    if(matches[1]==email){
+                        if(matches[3]==senha){
+                            window.location.href = "home.html";
+                            return;
+                        }
+                        else
+                            break;
+                    }
+                }
+                alert("E-mail ou senha inválido.");
+            })
+            .catch((e) => console.error(e));
+    }
+</script>
