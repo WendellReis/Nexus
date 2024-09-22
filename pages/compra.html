@@ -16,17 +16,17 @@
         </div>
         <div class="space">
             <button onclick="openSearchBar()"><img class="cabecalhogeral_image" type="image" src="../assets/promo/magniglass.png"></button>
-            <button data-bs-toggle="modal" data-bs-target="#exampleModal"><img class="cabecalhogeral_image" type="image" src="../assets/promo/bell.png"></button>
-            <input class="cabecalhogeral_image" type="image" src="../assets/promo/cart.png">
-            <input class="cabecalhogeral_image" type="image" src="../assets/promo/user.png">
+            <button data-bs-toggle="modal" data-bs-target="#notificacaoModal"><img class="cabecalhogeral_image" type="image" src="../assets/promo/bell.png"></button>
+            <button data-bs-toggle="modal" data-bs-target="#cartModal"><img class="cabecalhogeral_image" type="image" src="../assets/promo/cart.png"></button>
+            <a href="perfil.html"><input class="cabecalhogeral_image" type="image" src="../assets/promo/user.png"></a>
             <a href="perfil.html"><input class="usuario_botao" type="button" value="Usuário"></a>
         </div>
 
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="notificacaoModal" tabindex="-1" aria-labelledby="notificacaoModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Notificações</h1>
+                        <h1 class="modal-title fs-5" id="notificacaoModalLabel">Notificações</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -43,6 +43,42 @@
             </div>
         </div>
         
+        <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="cartModalLabel">Itens no Carrinho</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="d-flex justify-content-between">
+                                    <span>Red Dead Redemption II</span>
+                                    <span class="custo">R$ 100,00</span>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex justify-content-between">
+                                    <span>Call of Duty: Warzone</span>
+                                    <span class="custo">R$ 150,00</span>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex justify-content-between">
+                                    <span>Battlefield 2042</span>
+                                    <span class="custo">R$ 200,00</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        <a href="pagamento.html" class="btn btn-primary comprar">Ir para Pagamento</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
     <div class="container-fluid conteudo">
