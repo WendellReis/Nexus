@@ -6,6 +6,7 @@ body {
     min-height: 100vh;
     position: relative;
     color:white;
+    font-family:sans-serif;
 }
 
 .container {
@@ -13,13 +14,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: auto;
+    height: 100%;
 }
 
-.titulo_login {
+.titulo_pagamento {
     font-family:sans-serif;
     text-align: center;
-    font-size: 220%;
+    font-size: 180%;
     color:white;
 }
 
@@ -27,12 +28,15 @@ form {
     text-align: center;
 }
 
+input {
+    color-scheme: dark;
+}
+
 .campo {
     color:var(--dark);
     border:none;
     border-color: transparent;
     outline: none;
-    font-size-adjust: inherit;
     background-color:transparent;
     color:white;
     margin-left: 8%;
@@ -40,36 +44,15 @@ form {
     width:84%;
 }
 
-.botao_login {
-    text-align:center;
-    margin-top:3%;
-    color:var(--dark);
-    border-radius:2px;
-    font-size:18px;
-    font-weight:bold;
-    padding: 1%;
-    background-color: var(purple);
-    color: white;
-    border: none;
-    cursor: pointer;
-    margin:2%;
-    width:auto;
-    color:var(--dark);
-}
-
-.botao_login:hover {
-    background-color: var(--lightpurple);
-}
-
 .quadro {
-    padding-top: 3%;
-    padding-bottom: 6%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     text-align: justify;
-    width: 30%;
+    width: 25%;
     height:auto;
     margin: 0 auto;
     background-color: black;
-    border-radius:8px;
+    border-radius:2%;
 }
 
 .linha1 {
@@ -77,44 +60,10 @@ form {
     margin-bottom: 5%;
 }
 
-.linha2 {
-    width: 84%;
-    margin-bottom: 1%;
-}
-
 .linha3 {
     height: 1px;
     background-color: white;
-}
-
-.esqueci {
-    margin-top: 0;
-    font-family: sans-serif;
-    font-size:12px;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-    margin-left:8%;
-}
-
-.criarConta {
-    color:white;
-    font-weight: bold;
-    text-align: center;
-    width:100%;
-    font-family: sans-serif;
-    font-size:12px;
-    padding-bottom: 10%;
-}
-
-.criar {
-    display: inline-block;
-}
-
-.criarLink {
-    text-decoration:none;
-    display: inline-block;
-    color:var(--lightpurple);
+    margin: 1%;
 }
 
 footer {
@@ -134,29 +83,61 @@ header {
     text-align: center;
 }
 
-a:link {
-    text-decoration: none; 
+.logo {
+    max-height: 30px;
+    padding: 2%;
 }
-a:visited {
-    text-decoration: none; 
+
+.DWEB {
+    color: rgba(255,255,255,1);
+    position: relative;
+    font-family: Mulish;
+    font-weight: Regular;
+    text-align: left;
+    font-size: 1em;
 }
-a:hover {
+
+a:link { 
     text-decoration: none; 
-}
-a:active {
+} 
+a:visited { 
+    text-decoration: none; 
+} 
+a:hover { 
+    text-decoration: none; 
+} 
+a:active { 
     text-decoration: none; 
 }
 
 #rod {
     width: 100%;
     align-items: center;
-    margin-bottom:0;
-    height:10%;
+    margin-bottom: 0;
+    height: 10%;
 }
 
 .rodape-tu {
     width: 100%;
     margin-bottom: 0;
+}
+
+.direitos {
+    width: 100%;
+    text-align: right;
+    color:white;
+    margin-right: 50%;
+}
+.politica {
+    color:white;
+    width: 100%;
+    text-align: left;
+}
+
+footer {
+    position: absolute;
+    bottom:0%;
+    width: 100%;
 }
 
 .direitos {
@@ -171,12 +152,35 @@ a:active {
     text-align: center;
 }
 
+.botao_pagamento, button {
+    text-align:center;
+    margin-top:3%;
+    color:var(--dark);
+    border-radius:2px;
+    font-size:18px;
+    font-weight:bold;
+    padding: 1%;
+    background-color: var(--purple);
+    border: none;
+    cursor: pointer;
+    margin:2%;
+    width:auto;
+    color:var(--dark);
+}
+
+.botao_pagamento:hover {
+    background-color: var(--lightpurple);
+}
+
+.pagform {
+    padding-bottom: 50px;
+}
+
 @media (max-width: 800px){
     .quadro {
         width: 80% !important;
         margin: auto;
-        transition: .5s width ease;
-    }
+    } 
 }
 
 @media(max-width: 500px){
