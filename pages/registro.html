@@ -54,6 +54,14 @@
             alert("Nenhum campo pode estar vazio.");
             return;
         }
+        if(nome.length < 3){
+            alert("Nome precisa ter pelo menos 3 letras.");
+            return;
+        }
+        if(senha.length < 8 || senha.length > 16){
+            alert("Senha precisa ter entre 8 e 16 caracteres.");
+            return;
+        }
         if(email!=confemail || senha!=confsenha){
             alert("E-mail ou senha não coincidem.");
             return;
@@ -72,6 +80,8 @@
                 }
             })
             .catch((e) => console.error(e));
-        
+        alert("Conta criada com sucesso!");
+        window.location.href = "login.html";
+        return;
     }
 </script>
