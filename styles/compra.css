@@ -318,3 +318,8 @@ button {
     background-color: var(--dark);
     border:none;
 }
+
+.custo {
+    color:green;
+    font-weight: bold;
+}
